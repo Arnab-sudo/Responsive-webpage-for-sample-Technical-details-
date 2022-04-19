@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Documentation on Web Technologies</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <div id="super-container">
+        
+        
+  
+  
+      
+  
+  
+       
+        <nav id="navbar">
+          <div id="page-header">
+            <h3>Documentation on HTML, CSS and Javascript</h3>
+          </div>
+          <a href="#doc1" id="nav-link">What is HTML</a>
+          <a href="#doc2" id="nav-link">What is CSS</a>
+          <a href="#doc3" id="nav-link">Static vs Dynamic HTML</a>
+          <a href="#doc4" id="nav-link">What is Javascript</a>
+          <a href="#doc5" id="nav-link">var vs let vs const</a>
+          <a href="#doc6" id="nav-link">Functional Programming in Javascript</a>
+          <a href="#doc7" id="nav-link">Web Applications</a>
+          <a href="#doc8" id="nav-link">Frontend vs Backend</a>
+          <a href="#doc9" id="nav-link">Libraries and Microservices</a>
+          <a href="#doc10" id="nav-link">Other Important Technologies</a>
+        </nav>
+
+      </div>
+      
+      <div id="container">
+        <section class="main-section" id="doc1">
+          <header>What is HTML</header>
+          <article>
+            <p>
+              HTML stands for HyperText Markup Language. it is the foundational script that is used to build a webpage. though it is not technically a programming language, it is qute extensive and is quite useful in building a basic static webpage.  This is based on a set of principle that has been agreed on by international stahdards to regulate and have a uniform structure for the internet. But the HTML codes dont work on anywhere other than that of a Web browser which isoften written in other low level languages like C++. the browser interprets the HTML code and executes them to create the webpage.
+              <br>
+              A sample of the HTML syntax is as follows:-
+              
+              <pre>
+                <code>
+                  &lthtml&gt
+                    &ltbody&gt
+                      This is a random &ltstrong&gtHTML&lt/strong&gt code !
+                    &lt/body&gt
+                  &lt/html&gt
+                </code>
+              </pre>
+            </p><br>
+            <p>
+              As we can see that the tags like <var>html</var>, <var>body</var>, enclosed withinb the conditional operators are actually HTML tags that builds the herirarchy structure of the webpage. there rae many more such HTML tags and elements, each having attributes like width and height that helps us build the web document.
+              <br>
+              the Doctype signifies which document type it is, which HTML by the way. the <strong> meta</strong> tag signifiesthe metadata of the page that helps us with SEO ie, Search ENgine Optimisation. We shall see aout the rest later as we proceed. 
+            </p>
+  
+          </article>
+        </section>
+        <section class="main-section" id="doc2">
+          <header>What is CSS</header>
+          <article>
+            <p>
+              CSS stands for <strong>Cascading Style Sheets</strong>. this isused by the  HTML document to add some styling to the basic html document, which makes it lookpresentable to the visitors. 
+              <br>
+              it also adds behaviour to the html document and makes it responsive to user input and viewport dimensions. it also adds animations to the elements.
+              the syntax of css file looks like the following:
+              <pre>
+                <code>
+                  #text{
+                    color: black;
+                  }
+                </code>
+              </pre>
+              <br>
+              <p>
+                here we see that the '#text' is the selector of the 'id' attribute of am element , and that is being used to set the color of the content as black. this example was that of a single selector, while there are many more types, like combined selectors, chained selectors,etc.
+              </p>
+
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="doc3">
+          <header>Static vs Dynamic HTML</header>
+          <article>
+            <p>
+              <ul>
+                <li>The easiest difference is static HTML once rendered cannot be changed on the other hand dynamic HTML can be changed.</li>
+                <li>Static web pages cannot have database access but dynamic pages can be connected to database.</li>
+                <li>Using static HTML no interactions persist between user and server but dynamic HTML has capability to interact with the user.</li>
+                <li>Static HTML does not require server side coding but dynamic HTML requires server side coding.</li>
+                <li> No animation, games can be developed using the static HTML but on the other hand dynamic HTML can perform this task.</li>
+              </ul>
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="doc4">
+          <header>What is Javascript</header>
+          <article>
+            <p>
+              Now we have seen what are HTML and CSS. but these noly create a static page and the user interactions are not customisable. HTML gives the cnotent of the document, while CSS adds styling and view structure t the document and arranges the elementson grids ofcolumns and rows, so that they look similar across devices, and change presentation logic as device or viewport changes.
+              <br>
+              <p>
+                now Javascript, also known as ECMAScript is basically to add the business logic to yuor document which tells the document and its elements to react based on the user interactions. user interactions create events in the document and the Javascript uses thee events(like mouseclick,etc) to manipulate the document elements. and it does so using various in-built as well as user defined functions and methods.
+
+              </p>
+              
+              <br>
+              <p>
+                It must be noted that despite the popularity , Javascript is not a typical Object Orineted Programming Langauge. rather, it is Functional programming language. which means that it mostly deals with Objects(not class instances as in OOPS) and Functions. 
+                <br>
+                However, that means that it doesnt abide by the logic of the class based langauges like Java. however, this was an inconviennece which was solved usnig a syntactic sugar where we can use the class and pass a constroctor. but under the hoood its basically the functions that are in play as these are derived from the Prototype Object itself. Thus many developers who use Javasript for libraries like React ,often use the function, either by declaring it or as arrow functions. 
+              </p>
+              <br>
+              <p>
+                <strong>Below we will find a code sample of javascript</strong>
+                <pre>
+                  <code>
+                    var x = 22;
+                    var y = 5;
+                    function ismorethan(number, max){
+                      if(number >= max){
+                        console.log("the number is more than {0}",max);
+                      }
+                    }
+                    ismorethan(x,y);
+                  </code>
+                </pre>
+              </p>
+
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="doc5">
+          <header>var vs let vs const</header>
+          <article>
+            <p>
+              Var is the classical way of js coding...ot is hoisted  and can be redecorated and updated. It is limited to the the scope it's is defined in is global scope , func scope etc. Variables declared  using var that are global can be accessed  by functions which are also capable of declaring their own variables with same name but diff values....this creates an error.
+              
+
+
+
+
+            </p>
+            <br>
+            <p>
+              This is where the let variables come in...let variables are also hoisted.  They are block scoped that means they are only relevant in the blocks they have been defined meaning that any let variable outside a function is not global scoped.  In a scope they can be updated but not redeclared. But in different scopes let variables can share same name as they won't be relevant outside of it.
+            </p>
+            <br>
+            <p>
+              Const is similar to let only that it can't be updated either since it's constant.
+
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="doc6">
+          <header>Functional Programming in Javascript</header>
+          <article>
+            <p>
+              javscript is called a functional prog lang becuase the functions here are first class citizens. this we say because js functions can be passed as a value to a variable, as arguements in a function,& as objects.
+            </p>
+            <br>
+            <p>
+              the fields in the parentheses of a function when declared are called as parameters. when these functiions are called with specific value to these parameters, they parameters are called arguements, which is true for all langauges. javascript can pass the functions as arguements as well.
+            </p>
+            <br>
+            <p>
+              ALSO, we can use the JS functions as a object value, ie in a JS object with key-value pairs,. we can pass a function as a value to a key. so that we call the functioi in the following sytax as Object.FunctionName()...
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="doc7">
+          <header>Web Applications</header>
+          <article>
+            <p>
+              normally what happens is that the client demands a certin resource or data from the server and the web sever delivers it by fetching them from the database. but this is a very lengthy process and eats lot of time and CPU power of the server. thus was introduced the concept of 'web-applications'. 
+
+            </p>
+            <br>
+            <p>
+              normally when the resources were demanded from the server, all the sttaic(html, css) files were fetched and stored in web server n every instance. but now what web application sdo is that before the server can respond to the HTTP GET request of the client, it takes the data, specific to the request and adds them to pre-builthtl templates that were stored as static(bcpoz they dont change)files in the static folder. thus, as soon as the server receives a GET/POST request from the server, it sends the request data, aong with its url encoding(which page, sub-page,etc), the GET/POST data , its headers and the cookies to the web appplication. now, the web app, is fed the HTML templates that is same for a certain typeof GET/POST request, from the static files. a copy of the static file is also sent to the server to minimise the instances of server calls so that same resources can be stored and reduce downtime server. now the web application gets the data to fill the html template from the database, like mongodb, mySQL,etc. if its a GET request, the web app will withdraw data but in an event of POST request the web app might be used to add or updatethe databse data. in the end, the web app, adds the html template, fills it with the data from database and then sends the modified html, with the styling, data, and bells and whistles, to server. and now the server havnig recieved the finsihed response, trasnmits that to the browser/app thereby reducing the browser workload, incerasing speed, and performance.
+
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="doc8">
+          <header>Frontend vs Backend</header>
+          <article>
+            <h4>Frontend</h4>
+            <p>
+              Fronted refers to the presentational logic ofa document, that is the webpage. we use the html, css and javascript. we use that to make a vanilla webpage. <br>
+              nowadays we use the frontend libraries, APIs, to create webapplications and use the frontend librbaries to build dynamic webpages, that are responsive. 
+              <br>
+              This script is what gets passed onto and is procesed by the browser. initially it dies reside in the server as well, but on first server request, it gets downloaded and resides in the host computer to reduce downtime as they seldom change.
+
+
+
+            </p>
+            <br>
+            <h4>Backend</h4>
+            <p>
+              Backend represents the business logic of the website. the backend codes were mostly written in php and these codes reside in the server computers that are located in the data-firms. but now a days, we can use varous other languages that can be used to write backend codes, namely, C#, Java, Python and also Javascript.
+              <br>
+              what the backend code does is that it defines the logic as t ohow the severs shud respond to specific requests. there are two types of requestsm GET and POST requests. depending on them, the server responds. the response is defined by the functions that are written by the user. normally this requests are to extract the field values and data from the database. 
+              <br>
+              <h4>Databases</h4>
+              <p>
+                Databases contain the data that the servers read from. the databases are today of various types. the famous one is ofcourse the SQL database that uses the SQL langauge to query the data base of the needed data. the SQL is a relational database, which organises the data in tables and rows to give it a structure. however the tabular formatting also means it needs more memory and is not as scalable.
+                <br>
+                this is where the NoSQL databses as used by the MongoDB and Django is useful as they oranise the data into objects. this makes them mroe scalable, easy to add and delete fields. also this means that we can orgaises the complexdata in to JSON objects which occupies lesser memory. and just in case we seek to access a tabular format of these data, we can easily orgainse tha data from them using the Django models, or by usng the Mongoose library written in Javascript.
+              </p>
+
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="doc9"> 
+          <header>Libraries and Microservices</header>
+          <article>
+            <p>
+              There are various technologies that we use to build a dynamic modern website.
+            </p>
+            <ul>
+              some of these Libraries that webdevelopers often use are :
+              <li>React JS</li>
+              <li>Vue.js</li>
+              <li>python Django</li>
+              <li>Node JS</li>
+              <li>Express JS</li>
+              <li>MongoDB</li>
+              <li>Laravel</li>
+            </ul>
+
+          </article>
+        </section>
+        <section class="main-section" id="doc10">
+          <header>Other Important Technologies</header>
+          <article>
+            <p>
+              here we can see the various Technology stacks that are used by the web developers nowadays.
+              <ul>
+                <li><strong>MERN stack</strong>  
+                  <li>MongoDB</li>
+                  <li>ExpressJS</li>
+                  <li>React JS</li>
+                  <li>Node JS</li>
+                </li>
+                <li>
+                  <strong>MEAN stack</strong>
+                  <li>MongoDB</li>
+                  <li>ExpressJS</li>
+                  <li>Angular JS</li>
+                  <li>Node JS</li>
+                  
+                </li>
+                <li>
+                  <strong>LAMP stack</strong>
+                  <li>Linux</li>
+                  <li>Apache</li>
+                  <li>MySQL</li>
+                  <li>PHP</li>
+                </li>
+                <li><strong>Ruby on Rails</strong>
+                  </li>
+                <li>
+                  <strong>Django with React, MySQL/SQLlite</strong>
+                </li>
+              </ul>
+            </p>
+          </article>
+        </section>
+
+      </div>
+
+      <div id="grid-container">
+        <!-- <nav id="navbar">
+          <a href="#doc1" id="nav-link">What is HTML</a>
+          <a href="#doc2" id="nav-link">What is CSS</a>
+          <a href="#doc3" id="nav-link">Static vs Dynamic HTML</a>
+          <a href="#doc4" id="nav-link">What is Javascript</a>
+          <a href="#doc5" id="nav-link">var vs let vs const</a>
+          <a href="#doc6" id="nav-link">Functional Programming in Javascript</a>
+          <a href="#doc7" id="nav-link">Web Applications</a>
+          <a href="#doc8" id="nav-link">Frontend vs Backend</a>
+          <a href="#doc9" id="nav-link">Libraries and Microservices</a>
+          <a href="#doc10" id="nav-link">Other Important Technologies</a>
+        </nav> -->
+        
+        <!-- <div id="container">
+          <section class="main-section" id="doc1">
+            <header>What is HTML</header>
+            <article>
+              <p>
+                HTML stands for HyperText Markup Language. it is the foundational script that is used to build a webpage. though it is not technically a programming language, it is qute extensive and is quite useful in building a basic static webpage.  This is based on a set of principle that has been agreed on by international stahdards to regulate and have a uniform structure for the internet. But the HTML codes dont work on anywhere other than that of a Web browser which isoften written in other low level languages like C++. the browser interprets the HTML code and executes them to create the webpage.
+                <br>
+                A sample of the HTML syntax is as follows:-
+                
+                <pre>
+                  <code>
+                    &lthtml&gt
+                      &ltbody&gt
+                        This is a random &ltstrong&gtHTML&lt/strong&gt code !
+                      &lt/body&gt
+                    &lt/html&gt
+                  </code>
+                </pre>
+              </p><br>
+              <p>
+                As we can see that the tags like <var>html</var>, <var>body</var>, enclosed withinb the conditional operators are actually HTML tags that builds the herirarchy structure of the webpage. there rae many more such HTML tags and elements, each having attributes like width and height that helps us build the web document.
+                <br>
+                the Doctype signifies which document type it is, which HTML by the way. the <strong> meta</strong> tag signifiesthe metadata of the page that helps us with SEO ie, Search ENgine Optimisation. We shall see aout the rest later as we proceed. 
+              </p>
+    
+            </article>
+          </section>
+          <section class="main-section" id="doc2">
+            <header>What is CSS</header>
+            <article>
+              <p>
+                CSS stands for <strong>Cascading Style Sheets</strong>. this isused by the  HTML document to add some styling to the basic html document, which makes it lookpresentable to the visitors. 
+                <br>
+                it also adds behaviour to the html document and makes it responsive to user input and viewport dimensions. it also adds animations to the elements.
+                the syntax of css file looks like the following:
+                <pre>
+                  <code>
+                    #text{
+                      color: black;
+                    }
+                  </code>
+                </pre>
+                <br>
+                <p>
+                  here we see that the '#text' is the selector of the 'id' attribute of am element , and that is being used to set the color of the content as black. this example was that of a single selector, while there are many more types, like combined selectors, chained selectors,etc.
+                </p>
+
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="doc3">
+            <header>Static vs Dynamic HTML</header>
+            <article>
+              <p>
+                <ul>
+                  <li>The easiest difference is static HTML once rendered cannot be changed on the other hand dynamic HTML can be changed.</li>
+                  <li>Static web pages cannot have database access but dynamic pages can be connected to database.</li>
+                  <li>Using static HTML no interactions persist between user and server but dynamic HTML has capability to interact with the user.</li>
+                  <li>Static HTML does not require server side coding but dynamic HTML requires server side coding.</li>
+                  <li> No animation, games can be developed using the static HTML but on the other hand dynamic HTML can perform this task.</li>
+                </ul>
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="doc4">
+            <header>What is Javascript</header>
+            <article>
+              <p>
+                Now we have seen what are HTML and CSS. but these noly create a static page and the user interactions are not customisable. HTML gives the cnotent of the document, while CSS adds styling and view structure t the document and arranges the elementson grids ofcolumns and rows, so that they look similar across devices, and change presentation logic as device or viewport changes.
+                <br>
+                <p>
+                  now Javascript, also known as ECMAScript is basically to add the business logic to yuor document which tells the document and its elements to react based on the user interactions. user interactions create events in the document and the Javascript uses thee events(like mouseclick,etc) to manipulate the document elements. and it does so using various in-built as well as user defined functions and methods.
+
+                </p>
+                
+                <br>
+                <p>
+                  It must be noted that despite the popularity , Javascript is not a typical Object Orineted Programming Langauge. rather, it is Functional programming language. which means that it mostly deals with Objects(not class instances as in OOPS) and Functions. 
+                  <br>
+                  However, that means that it doesnt abide by the logic of the class based langauges like Java. however, this was an inconviennece which was solved usnig a syntactic sugar where we can use the class and pass a constroctor. but under the hoood its basically the functions that are in play as these are derived from the Prototype Object itself. Thus many developers who use Javasript for libraries like React ,often use the function, either by declaring it or as arrow functions. 
+                </p>
+                <br>
+                <p>
+                  <strong>Below we will find a code sample of javascript</strong>
+                  <pre>
+                    <code>
+                      var x = 22;
+                      var y = 5;
+                      function ismorethan(number, max){
+                        if(number >= max){
+                          console.log("the number is more than {0}",max);
+                        }
+                      }
+                      ismorethan(x,y);
+                    </code>
+                  </pre>
+                </p>
+
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="doc5">
+            <header>var vs let vs const</header>
+            <article>
+              <p>
+                Var is the classical way of js coding...ot is hoisted  and can be redecorated and updated. It is limited to the the scope it's is defined in is global scope , func scope etc. Variables declared  using var that are global can be accessed  by functions which are also capable of declaring their own variables with same name but diff values....this creates an error.
+                
+
+
+
+
+              </p>
+              <br>
+              <p>
+                This is where the let variables come in...let variables are also hoisted.  They are block scoped that means they are only relevant in the blocks they have been defined meaning that any let variable outside a function is not global scoped.  In a scope they can be updated but not redeclared. But in different scopes let variables can share same name as they won't be relevant outside of it.
+              </p>
+              <br>
+              <p>
+                Const is similar to let only that it can't be updated either since it's constant.
+
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="doc6">
+            <header>Functional Programming in Javascript</header>
+            <article>
+              <p>
+                javscript is called a functional prog lang becuase the functions here are first class citizens. this we say because js functions can be passed as a value to a variable, as arguements in a function,& as objects.
+              </p>
+              <br>
+              <p>
+                the fields in the parentheses of a function when declared are called as parameters. when these functiions are called with specific value to these parameters, they parameters are called arguements, which is true for all langauges. javascript can pass the functions as arguements as well.
+              </p>
+              <br>
+              <p>
+                ALSO, we can use the JS functions as a object value, ie in a JS object with key-value pairs,. we can pass a function as a value to a key. so that we call the functioi in the following sytax as Object.FunctionName()...
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="doc7">
+            <header>Web Applications</header>
+            <article>
+              <p>
+                normally what happens is that the client demands a certin resource or data from the server and the web sever delivers it by fetching them from the database. but this is a very lengthy process and eats lot of time and CPU power of the server. thus was introduced the concept of 'web-applications'. 
+
+              </p>
+              <br>
+              <p>
+                normally when the resources were demanded from the server, all the sttaic(html, css) files were fetched and stored in web server n every instance. but now what web application sdo is that before the server can respond to the HTTP GET request of the client, it takes the data, specific to the request and adds them to pre-builthtl templates that were stored as static(bcpoz they dont change)files in the static folder. thus, as soon as the server receives a GET/POST request from the server, it sends the request data, aong with its url encoding(which page, sub-page,etc), the GET/POST data , its headers and the cookies to the web appplication. now, the web app, is fed the HTML templates that is same for a certain typeof GET/POST request, from the static files. a copy of the static file is also sent to the server to minimise the instances of server calls so that same resources can be stored and reduce downtime server. now the web application gets the data to fill the html template from the database, like mongodb, mySQL,etc. if its a GET request, the web app will withdraw data but in an event of POST request the web app might be used to add or updatethe databse data. in the end, the web app, adds the html template, fills it with the data from database and then sends the modified html, with the styling, data, and bells and whistles, to server. and now the server havnig recieved the finsihed response, trasnmits that to the browser/app thereby reducing the browser workload, incerasing speed, and performance.
+
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="doc8">
+            <header>Frontend vs Backend</header>
+            <article>
+              <h4>Frontend</h4>
+              <p>
+                Fronted refers to the presentational logic ofa document, that is the webpage. we use the html, css and javascript. we use that to make a vanilla webpage. <br>
+                nowadays we use the frontend libraries, APIs, to create webapplications and use the frontend librbaries to build dynamic webpages, that are responsive. 
+                <br>
+                This script is what gets passed onto and is procesed by the browser. initially it dies reside in the server as well, but on first server request, it gets downloaded and resides in the host computer to reduce downtime as they seldom change.
+
+
+
+              </p>
+              <br>
+              <h4>Backend</h4>
+              <p>
+                Backend represents the business logic of the website. the backend codes were mostly written in php and these codes reside in the server computers that are located in the data-firms. but now a days, we can use varous other languages that can be used to write backend codes, namely, C#, Java, Python and also Javascript.
+                <br>
+                what the backend code does is that it defines the logic as t ohow the severs shud respond to specific requests. there are two types of requestsm GET and POST requests. depending on them, the server responds. the response is defined by the functions that are written by the user. normally this requests are to extract the field values and data from the database. 
+                <br>
+                <h4>Databases</h4>
+                <p>
+                  Databases contain the data that the servers read from. the databases are today of various types. the famous one is ofcourse the SQL database that uses the SQL langauge to query the data base of the needed data. the SQL is a relational database, which organises the data in tables and rows to give it a structure. however the tabular formatting also means it needs more memory and is not as scalable.
+                  <br>
+                  this is where the NoSQL databses as used by the MongoDB and Django is useful as they oranise the data into objects. this makes them mroe scalable, easy to add and delete fields. also this means that we can orgaises the complexdata in to JSON objects which occupies lesser memory. and just in case we seek to access a tabular format of these data, we can easily orgainse tha data from them using the Django models, or by usng the Mongoose library written in Javascript.
+                </p>
+
+              </p>
+            </article>
+          </section>
+          <section class="main-section" id="doc9"> 
+            <header>Libraries and Microservices</header>
+            <article>
+              <p>
+                There are various technologies that we use to build a dynamic modern website.
+              </p>
+              <ul>
+                some of these Libraries that webdevelopers often use are :
+                <li>React JS</li>
+                <li>Vue.js</li>
+                <li>python Django</li>
+                <li>Node JS</li>
+                <li>Express JS</li>
+                <li>MongoDB</li>
+                <li>Laravel</li>
+              </ul>
+
+            </article>
+          </section>
+          <section class="main-section" id="doc10">
+            <header>Other Important Technologies</header>
+            <article>
+              <p>
+                here we can see the various Technology stacks that are used by the web developers nowadays.
+                <ul>
+                  <li><strong>MERN stack</strong>  
+                    <li>MongoDB</li>
+                    <li>ExpressJS</li>
+                    <li>React JS</li>
+                    <li>Node JS</li>
+                  </li>
+                  <li>
+                    <strong>MEAN stack</strong>
+                    <li>MongoDB</li>
+                    <li>ExpressJS</li>
+                    <li>Angular JS</li>
+                    <li>Node JS</li>
+                    
+                  </li>
+                  <li>
+                    <strong>LAMP stack</strong>
+                    <li>Linux</li>
+                    <li>Apache</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                  </li>
+                  <li><strong>Ruby on Rails</strong>
+                    </li>
+                  <li>
+                    <strong>Django with React, MySQL/SQLlite</strong>
+                  </li>
+                </ul>
+              </p>
+            </article>
+          </section>
+
+        </div> -->
+
+
+
+      </div>
+
+
+      
+    </main>
+
+
+
+  </body>
+</html>
